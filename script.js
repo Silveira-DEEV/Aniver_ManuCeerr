@@ -54,7 +54,7 @@ window.onload = function () {
     {
       src: './images/congratulations-1173.gif',
       alt: '! POR FIM !',
-      text: 'Eu queria te parabenizar por mais um ano de vida. Te parabenizar por ser essa menina incrível e carismática que você é. Você é autêntica, é única. Tu és a pessoa mais incrível que eu já conheci. Muito obrigado por fazer parte da minha vida. Eu te quero pra sempre aqui comigo, simplesmente pelo fato de você ser você. Tu és linda, inteligente, tem um humor bem estranho e é extremamente amorosa. Tu és incrível, meu amor. FELIZ DIA 2! EU TE AMO!!!!!'
+      text: 'Eu queria te parabenizar por mais um ano de vida. Te parabenizar por ser essa menina incrível e carismática que você é. Você é autêntica, é única. Tu és a pessoa mais incrível que eu já conheci. Muito obrigado por fazer parte da minha vida. Eu te quero pra sempre aqui comigo, simplesmente pelo fato de você ser você. Tu és linda, inteligente, tem um humor bem estranho e é extremamente amorosa. Tu és incrível, meu amor. FELIZ DIA 2! FELIZ ANIVERSÁRIO! EU TE AMO!!!!!'
     }
   ];
 
@@ -109,4 +109,5 @@ window.onload = function () {
   // Inicializa o carrossel
   updateCarousel();
 };
+
 
