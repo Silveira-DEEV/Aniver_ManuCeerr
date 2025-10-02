@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #fff0f5;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.background-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('./images/Hello-Kitty-Pink-GIF.gif') no-repeat center center;
+    background-size: auto;
+    background-color: #FFC0CB;
+    z-index: 0;
+    opacity: 0.9;
+    pointer-events: none;
+    display: block;
+}
+
+/* Garantir que o conteúdo fique acima do fundo */
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+h1 {
+    color: #ff8599;
+    font-size: 1.8rem;
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+/* Cartão de foto */
+.photo-card {
+    width: 300px;
+    max-width: 100%;
+    background-color: rgba(255, 230, 240, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.photo-card:hover {
+    transform: scale(1.02);
+}
+
+/* Imagem inicialmente oculta */
+.photo-card img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Texto escondido até a imagem aparecer */
+.hidden-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ff647e;
+    word-wrap: break-word;
+}
+
+/* Legenda com o alt */
+.image-alt {
+    display: block;
+    font-size: 1.05rem;
+    color: #ff647e;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    color: #aa336a;
+    font-size: 1rem;
+    padding: 10px;
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-card {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    .hidden-text,
+    .image-alt {
+        font-size: 1rem;
+    }
+}
+
+/* Extra: para telas menores ainda */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .photo-card {
+        padding: 8px;
+    }
+
+    .image-alt {
+        font-size: 0.95rem;
+    }
+
+    .hidden-text {
+        font-size: 0.9rem;
+    }
+}
+
+#prevBtn,
+#nextBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ff647e;
+    user-select: none;
+    padding: 0 10px;
+    transition: color 0.3s;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+    color: #ff8599;
+}
+
+#carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Botões setas */
+.carousel-arrow {
+    font-size: 2.5rem;
+    background: transparent;
+    border: none;
+    color: #ff647e;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    user-select: none;
+    padding: 10px;
+    line-height: 1;
+}
+
+.carousel-arrow:hover {
+    color: #ff8599;
+}
+
+/* Para melhorar o toque em mobile */
+.carousel-arrow:focus {
+    outline: 2px solid #ff8599;
+    outline-offset: 4px;
+}
