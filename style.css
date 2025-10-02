@@ -2,18 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
 }
 
 html,
 body {
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     overflow-x: hidden;
     background-color: #fff0f5;
     font-family: 'Segoe UI', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .background-gif {
@@ -36,7 +39,9 @@ body {
     position: relative;
     z-index: 1;
     padding: 20px;
+    flex: 1;
 }
+
 
 /* Cabeçalho */
 header {
@@ -99,16 +104,28 @@ header p {
     margin: 10px 0;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
-    margin-top: 40px;
     font-style: italic;
     color: #aa336a;
     font-size: 1rem;
-    padding: 10px;
-    display: block;
+    padding: 20px 10px;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 40px;
+    z-index: 10;
 }
+footer
+p {
+    color: #555;
+}
+
+footer
+h1 {
+    color: #ff8599;
+}
+
+
 
 /* Responsividade */
 @media (max-width: 768px) {
