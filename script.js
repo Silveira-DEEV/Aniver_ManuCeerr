@@ -13,7 +13,7 @@ window.onload = function () {
     {
       src: './images/FormaturaEscola.jpeg',
       alt: 'Nossa Formatura',
-      text: 'Momento muito importante pra nós, mas só foi, de fato, maravilhoso por conta da tua presença. Tu transformas tudo em paz, harmonia e saudade 🥰'
+      text: 'Momento muito importante pra nós, mas só foi, de fato maravilhoso, por conta da tua presença. Tu transformas tudo em paz, harmonia e saudade 🥰'
     },
     {
       src: './images/AnoNovo.jpeg',
@@ -109,3 +109,4 @@ window.onload = function () {
   // Inicializa o carrossel
   updateCarousel();
 };
+
